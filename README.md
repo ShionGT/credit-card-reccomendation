@@ -9,7 +9,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Visit [http://localhost:5000](https://japanese-ccr.onrender.com)
+Visit [https://japanese-ccr.onrender.com](https://japanese-ccr.onrender.com)
 
 ## Features
 - Interactive recommendation quiz
