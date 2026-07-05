@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カード一覧｜クレジットカードおすすめ比較</title>
+    <title>カード一覧｜CARD RECOMMEND</title>
     <meta name="description" content="すべてのクレジットカードを比較。年会費、還元率、特徴で選べます。">
 
     {% if adsense_enabled %}
@@ -11,13 +11,15 @@
             crossorigin="anonymous"></script>
     {% endif %}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="header-inner">
-            <h1 class="logo"><a href="/">💳 クレジットカードおすすめ比較</a></h1>
+            <h1 class="logo"><a href="/">CARD RECOMMEND</a></h1>
             <nav class="main-nav">
                 <a href="/">ホーム</a>
                 <a href="/cards">カード一覧</a>
@@ -38,22 +40,22 @@
 
     <section class="page-title">
         <div class="page-title-inner">
+            <div class="section-label">ALL CARDS</div>
             <h2>クレジットカード一覧</h2>
-            <p>全{{ cards|length }}枚のカードを比較できます。</p>
+            <p>全{{ cards|length }}枚のカードを比較できます</p>
         </div>
     </section>
 
-    <!-- Filter Bar -->
     <section class="filter-bar">
         <div class="filter-inner">
             <div class="filter-group">
-                <label>タグ：</label>
+                <label>タグ</label>
                 <select id="filterTag" onchange="filterCards()">
                     <option value="">すべて</option>
                 </select>
             </div>
             <div class="filter-group">
-                <label>年会費：</label>
+                <label>年会費</label>
                 <select id="filterFee" onchange="filterCards()">
                     <option value="">すべて</option>
                     <option value="free">永年無料</option>
@@ -61,7 +63,7 @@
                 </select>
             </div>
             <div class="filter-group">
-                <label>並び替え：</label>
+                <label>並び替え</label>
                 <select id="sortBy" onchange="filterCards()">
                     <option value="rating">評価順</option>
                     <option value="name">名前順</option>
@@ -93,7 +95,9 @@
                             <span class="tag">{{ tag }}</span>
                             {% endfor %}
                         </div>
+                        {% if card.rating %}
                         <div class="card-mini-rating">★ {{ card.rating }}</div>
+                        {% endif %}
                     </div>
                 </a>
                 {% endfor %}
@@ -114,7 +118,7 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <div class="footer-bottom">
-                <p>&copy; 2025 クレジットカードおすすめ比較. All rights reserved.</p>
+                <p>&copy; 2025 CARD RECOMMEND. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
     </footer>

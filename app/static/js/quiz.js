@@ -1,5 +1,6 @@
 /**
  * クレジットカードおすすめ診断 - Quiz Logic
+ * Prestige Black Theme
  */
 
 const questions = [
@@ -90,7 +91,7 @@ function startQuiz() {
 function renderQuestion() {
     const q = questions[currentQuestion];
     document.getElementById("quizQuestion").innerHTML = `<p>${q.text}</p>`;
-    document.getElementById("progressText").textContent = `質問 ${currentQuestion + 1} / ${questions.length}`;
+    document.getElementById("progressText").textContent = `QUESTION ${currentQuestion + 1} / ${questions.length}`;
     document.getElementById("progressFill").style.width = `${((currentQuestion + 1) / questions.length) * 100}%`;
 
     const optionsHtml = q.options.map((opt, i) => {
@@ -100,7 +101,6 @@ function renderQuestion() {
     }).join("");
     document.getElementById("quizOptions").innerHTML = optionsHtml;
 
-    // Nav buttons
     document.getElementById("btnBack").style.display = currentQuestion > 0 ? "block" : "none";
     const btnNext = document.getElementById("btnNext");
     btnNext.style.display = "block";
@@ -115,7 +115,6 @@ function selectOption(index) {
 function prevQuestion() {
     if (currentQuestion > 0) {
         currentQuestion--;
-        // Restore previous answer
         const q = questions[currentQuestion];
         const prevAns = answers[q.id];
         if (prevAns !== undefined) {
@@ -139,7 +138,6 @@ function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
         selectedOption = null;
-        // Restore if already answered
         const nextQ = questions[currentQuestion];
         if (answers[nextQ.id] !== undefined) {
             selectedOption = nextQ.options.findIndex(o => o.value === answers[nextQ.id]);
@@ -154,9 +152,10 @@ async function submitQuiz() {
     document.getElementById("quizSection").style.display = "none";
 
     const loadingHtml = `
-        <div style="text-align:center; padding:60px;">
-            <div style="font-size:1.5rem; margin-bottom:16px;">診断中...</div>
-            <div style="font-size:0.9rem; color:#5f6368;">あなたにぴったりのカードを探しています</div>
+        <div style="text-align:center; padding:80px 20px;">
+            <div style="font-size:0.75rem; color:#c5a572; letter-spacing:0.3em; text-transform:uppercase; margin-bottom:24px;">ANALYZING</div>
+            <div style="font-size:1.3rem; color:#fff; font-weight:600; margin-bottom:16px;">診断中...</div>
+            <div style="font-size:0.85rem; color:#8a8a8a;">あなたにぴったりのカードを探しています</div>
         </div>
     `;
     document.getElementById("resultsSection").style.display = "block";
@@ -172,7 +171,7 @@ async function submitQuiz() {
         renderResults(data.recommendations);
     } catch (e) {
         document.getElementById("resultsContainer").innerHTML = `
-            <div style="text-align:center; padding:40px; color:#ea4335;">
+            <div style="text-align:center; padding:40px; color:#8a8a8a; font-size:0.9rem;">
                 エラーが発生しました。もう一度お試しください。
             </div>
         `;
@@ -187,20 +186,20 @@ function renderResults(recommendations) {
         const card = rec.card;
         const imgHtml = card.image_url
             ? `<img src="${card.image_url}" alt="${card.name}" onerror="this.style.display='none'">`
-            : `<div style="font-size:2rem;">💳</div>`;
+            : `<div style="font-size:2rem; color:#3a3a3a;">💳</div>`;
         const tagsHtml = (card.tags || []).slice(0, 4).map(t => `<span class="tag">${t}</span>`).join("");
         const affiliateUrl = card.affiliate_url || "#";
         return `
             <div class="result-card">
                 <div class="result-rank ${ranks[i]}">${rankNums[i]}</div>
                 <div class="result-body">
-                    <div style="width:80px; height:50px; display:flex; align-items:center; justify-content:center;">${imgHtml}</div>
+                    <div style="width:64px; height:40px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">${imgHtml}</div>
                     <div class="result-info">
                         <h3>${card.name}</h3>
-                        <div class="result-fee">年会費: ${card.annual_fee_text}</div>
-                        <div class="result-rate">還元率: ${card.point_rate}</div>
+                        <div class="result-fee">${card.annual_fee_text}</div>
+                        <div class="result-rate">還元率 ${card.point_rate}</div>
                         <div class="result-tags">${tagsHtml}</div>
-                        <div class="result-score">マッチスコア: ${rec.score}</div>
+                        <div class="result-score">MATCH SCORE: ${rec.score}</div>
                     </div>
                 </div>
                 <div class="result-cta">
@@ -211,15 +210,13 @@ function renderResults(recommendations) {
     }).join("");
 
     const retryBtn = `
-        <div style="text-align:center; margin-top:32px;">
+        <div style="text-align:center; margin-top:48px;">
             <button class="btn-secondary" onclick="restartQuiz()">もう一度診断する</button>
             <a href="/cards" class="btn-secondary" style="margin-left:12px;">すべてのカードを見る</a>
         </div>
     `;
 
     document.getElementById("resultsContainer").innerHTML = html + retryBtn;
-
-    // Scroll to results
     document.getElementById("resultsSection").scrollIntoView({ behavior: "smooth" });
 }
 
