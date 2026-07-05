@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クレジットカードおすすめ比較｜あなたにぴったりの一枚を見つけよう</title>
+    <meta name="description" content="あなたのライフスタイルに合わせたクレジットカードをおすすめ。簡単な質問に答えるだけで、最適なカードがわかります。">
+
+    {% if adsense_enabled %}
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_client_id }}"
+            crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="{{ adsense_client_id }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="/">💳 クレジットカードおすすめ比較</a></h1>
+            <nav class="main-nav">
+                <a href="/">ホーム</a>
+                <a href="/cards">カード一覧</a>
+                <a href="/about">について</a>
+            </nav>
+        </div>
+    </header>
+
+    {% if adsense_enabled %}
+    <!-- AdSense Header Banner -->
+    <div class="ad-container ad-header">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="{{ adsense_client_id }}"
+             data-ad-slot="{{ adsense_slots.header_banner }}"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    {% endif %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h2>あなたにぴったりのクレジットカードを診断</h2>
+            <p>簡単な質問に答えるだけで、ライフスタイルに合ったカードをおすすめします。</p>
+            <button class="btn-cta" onclick="startQuiz()">診断を始める</button>
+        </div>
+    </section>
+
+    <!-- Quiz Section (hidden initially) -->
+    <section class="quiz-section" id="quizSection" style="display:none;">
+        <div class="quiz-inner">
+            <div class="quiz-progress">
+                <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+                <span id="progressText">質問 1 / 7</span>
+            </div>
+
+            <div class="quiz-question" id="quizQuestion"></div>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-nav">
+                <button class="btn-back" id="btnBack" onclick="prevQuestion()" style="display:none;">戻る</button>
+                <button class="btn-next" id="btnNext" onclick="nextQuestion()" style="display:none;">次へ</button>
+            </div>
+        </div>
+
+        {% if adsense_enabled %}
+        <!-- AdSense Quiz Interstitial -->
+        <div class="ad-container ad-quiz">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="{{ adsense_client_id }}"
+                 data-ad-slot="{{ adsense_slots.quiz_interstitial }}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        {% endif %}
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section" id="resultsSection" style="display:none;">
+        <div class="results-inner">
+            <h2>あなたにおすすめのカード</h2>
+            <p class="results-subtitle">診断結果に基づいたおすすめランキングです。</p>
+            <div id="resultsContainer"></div>
+        </div>
+    </section>
+
+    <!-- Featured Cards -->
+    <section class="featured-section" id="featuredSection">
+        <div class="featured-inner">
+            <h2>人気のクレジットカード</h2>
+            <div class="card-grid" id="featuredGrid">
+                {% for card in cards[:6] %}
+                <a href="/card/{{ card.id }}" class="card-mini">
+                    <div class="card-mini-image">
+                        {% if card.image_url %}
+                        <img src="{{ card.image_url }}" alt="{{ card.name }}" loading="lazy" onerror="this.style.display='none'">
+                        {% else %}
+                        <div class="card-placeholder">💳</div>
+                        {% endif %}
+                    </div>
+                    <div class="card-mini-body">
+                        <h3>{{ card.name }}</h3>
+                        <div class="card-mini-fee">{{ card.annual_fee_text }}</div>
+                        <div class="card-mini-rate">還元率 {{ card.point_rate }}</div>
+                        <div class="card-mini-tags">
+                            {% for tag in card.tags[:3] %}
+                            <span class="tag">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <div class="see-more">
+                <a href="/cards" class="btn-secondary">すべてのカードを見る</a>
+            </div>
+        </div>
+
+        {% if adsense_enabled %}
+        <!-- AdSense In-article -->
+        <div class="ad-container ad-inarticle">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="{{ adsense_client_id }}"
+                 data-ad-slot="{{ adsense_slots.in_article }}"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        {% endif %}
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        {% if adsense_enabled %}
+        <!-- AdSense Footer Banner -->
+        <div class="ad-container ad-footer">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="{{ adsense_client_id }}"
+                 data-ad-slot="{{ adsense_slots.footer_banner }}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        {% endif %}
+
+        <div class="footer-inner">
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>クレジットカードおすすめ比較</h4>
+                    <p>あなたのライフスタイルに合わせたクレジットカードをおすすめします。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>メニュー</h4>
+                    <ul>
+                        <li><a href="/">ホーム</a></li>
+                        <li><a href="/cards">カード一覧</a></li>
+                        <li><a href="/about">について</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>注意事項</h4>
+                    <p>当サイトの情報は参考目的です。正式な情報は各カード会社の公式サイトをご確認ください。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 クレジットカードおすすめ比較. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/quiz.js"></script>
+</body>
+</html>

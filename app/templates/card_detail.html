@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ card.name }}｜クレジットカードおすすめ比較</title>
+    <meta name="description" content="{{ card.name }}の詳細情報。年会費、還元率、特徴、キャンペーン情報など。">
+
+    {% if adsense_enabled %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_client_id }}"
+            crossorigin="anonymous"></script>
+    {% endif %}
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="/">💳 クレジットカードおすすめ比較</a></h1>
+            <nav class="main-nav">
+                <a href="/">ホーム</a>
+                <a href="/cards">カード一覧</a>
+                <a href="/about">について</a>
+            </nav>
+        </div>
+    </header>
+
+    {% if adsense_enabled %}
+    <div class="ad-container ad-header">
+        <ins class="adsbygoogle" style="display:block"
+             data-ad-client="{{ adsense_client_id }}"
+             data-ad-slot="{{ adsense_slots.header_banner }}"
+             data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    {% endif %}
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-inner">
+            <a href="/">ホーム</a> &rsaquo; <a href="/cards">カード一覧</a> &rsaquo; <span>{{ card.name }}</span>
+        </div>
+    </div>
+
+    <section class="card-detail-section">
+        <div class="card-detail-inner">
+            <div class="card-detail-layout">
+                <!-- Left: Card Image -->
+                <div class="card-detail-image">
+                    {% if card.image_url %}
+                    <img src="{{ card.image_url }}" alt="{{ card.name }}" onerror="this.style.display='none'; document.getElementById('placeholder').style.display='flex'">
+                    <div class="card-placeholder" id="placeholder" style="display:none; width:320px; height:200px; font-size:4rem;">💳</div>
+                    {% else %}
+                    <div class="card-placeholder" style="width:320px; height:200px; font-size:4rem;">💳</div>
+                    {% endif %}
+                    {% if card.rating %}
+                    <div class="card-detail-rating">評価 ★ {{ card.rating }}</div>
+                    {% endif %}
+                </div>
+
+                <!-- Right: Card Info -->
+                <div class="card-detail-info">
+                    <h2>{{ card.name }}</h2>
+                    <p class="card-issuer">{{ card.issuer }}</p>
+
+                    <div class="card-stats-grid">
+                        <div class="card-stat">
+                            <div class="stat-label">年会費</div>
+                            <div class="stat-value">{{ card.annual_fee_text }}</div>
+                        </div>
+                        <div class="card-stat">
+                            <div class="stat-label">ポイント還元率</div>
+                            <div class="stat-value">{{ card.point_rate }}</div>
+                        </div>
+                        <div class="card-stat">
+                            <div class="stat-label">金利</div>
+                            <div class="stat-value">{{ card.interest_rate }}</div>
+                        </div>
+                        <div class="card-stat">
+                            <div class="stat-label">利用可能枠</div>
+                            <div class="stat-value">{{ card.limit }}</div>
+                        </div>
+                    </div>
+
+                    {% if card.bonus %}
+                    <div class="card-bonus-box">
+                        <div class="bonus-title">🎁 キャンペーン</div>
+                        <div class="bonus-amount">{{ card.bonus }}</div>
+                        <div class="bonus-detail">{{ card.bonus_detail }}</div>
+                    </div>
+                    {% endif %}
+
+                    {% if card.affiliate_url %}
+                    <a href="{{ card.affiliate_url }}" class="btn-cta" target="_blank" rel="noopener nofollow">公式サイトで申し込む</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="card-features-section">
+                <h3>主な特徴</h3>
+                <ul class="features-list">
+                    {% for feature in card.features %}
+                    <li>✓ {{ feature }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- Benefits Radar -->
+            <div class="card-benefits-section">
+                <h3>メリット比較</h3>
+                <div class="benefits-bars">
+                    <div class="benefit-row">
+                        <span class="benefit-label">ショッピング</span>
+                        <div class="benefit-bar"><div class="benefit-fill" style="width: {{ card.shopping_benefits * 20 }}%"></div></div>
+                        <span class="benefit-score">{{ card.shopping_benefits }}/5</span>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-label">旅行</span>
+                        <div class="benefit-bar"><div class="benefit-fill" style="width: {{ card.travel_benefits * 20 }}%"></div></div>
+                        <span class="benefit-score">{{ card.travel_benefits }}/5</span>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-label">キャッシュバック</span>
+                        <div class="benefit-bar"><div class="benefit-fill" style="width: {{ card.cashback_benefits * 20 }}%"></div></div>
+                        <span class="benefit-score">{{ card.cashback_benefits }}/5</span>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-label">ダイニング</span>
+                        <div class="benefit-bar"><div class="benefit-fill" style="width: {{ card.dining_benefits * 20 }}%"></div></div>
+                        <span class="benefit-score">{{ card.dining_benefits }}/5</span>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-label">モバイル</span>
+                        <div class="benefit-bar"><div class="benefit-fill" style="width: {{ card.mobile_benefits * 20 }}%"></div></div>
+                        <span class="benefit-score">{{ card.mobile_benefits }}/5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="card-tags-section">
+                {% for tag in card.tags %}
+                <span class="tag tag-large">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% if adsense_enabled %}
+    <!-- In-article Ad -->
+    <div class="ad-container ad-inarticle">
+        <ins class="adsbygoogle" style="display:block; text-align:center;"
+             data-ad-layout="in-article" data-ad-format="fluid"
+             data-ad-client="{{ adsense_client_id }}"
+             data-ad-slot="{{ adsense_slots.in_article }}"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    {% endif %}
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-bottom">
+                <p>&copy; 2025 クレジットカードおすすめ比較. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

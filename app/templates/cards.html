@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カード一覧｜クレジットカードおすすめ比較</title>
+    <meta name="description" content="すべてのクレジットカードを比較。年会費、還元率、特徴で選べます。">
+
+    {% if adsense_enabled %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_client_id }}"
+            crossorigin="anonymous"></script>
+    {% endif %}
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="/">💳 クレジットカードおすすめ比較</a></h1>
+            <nav class="main-nav">
+                <a href="/">ホーム</a>
+                <a href="/cards">カード一覧</a>
+                <a href="/about">について</a>
+            </nav>
+        </div>
+    </header>
+
+    {% if adsense_enabled %}
+    <div class="ad-container ad-header">
+        <ins class="adsbygoogle" style="display:block"
+             data-ad-client="{{ adsense_client_id }}"
+             data-ad-slot="{{ adsense_slots.header_banner }}"
+             data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    {% endif %}
+
+    <section class="page-title">
+        <div class="page-title-inner">
+            <h2>クレジットカード一覧</h2>
+            <p>全{{ cards|length }}枚のカードを比較できます。</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="filter-inner">
+            <div class="filter-group">
+                <label>タグ：</label>
+                <select id="filterTag" onchange="filterCards()">
+                    <option value="">すべて</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>年会費：</label>
+                <select id="filterFee" onchange="filterCards()">
+                    <option value="">すべて</option>
+                    <option value="free">永年無料</option>
+                    <option value="paid">有料</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>並び替え：</label>
+                <select id="sortBy" onchange="filterCards()">
+                    <option value="rating">評価順</option>
+                    <option value="name">名前順</option>
+                    <option value="fee_low">年会費安い順</option>
+                    <option value="cashback">還元率順</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-list-section">
+        <div class="cards-list-inner">
+            <div class="card-grid" id="cardGrid">
+                {% for card in cards %}
+                <a href="/card/{{ card.id }}" class="card-mini" data-tags="{{ card.tags|join(',') }}" data-fee="{{ card.annual_fee }}" data-rating="{{ card.rating }}" data-cashback="{{ card.cashback_max }}" data-name="{{ card.name }}">
+                    <div class="card-mini-image">
+                        {% if card.image_url %}
+                        <img src="{{ card.image_url }}" alt="{{ card.name }}" loading="lazy" onerror="this.style.display='none'">
+                        {% else %}
+                        <div class="card-placeholder">💳</div>
+                        {% endif %}
+                    </div>
+                    <div class="card-mini-body">
+                        <h3>{{ card.name }}</h3>
+                        <div class="card-mini-fee">{{ card.annual_fee_text }}</div>
+                        <div class="card-mini-rate">還元率 {{ card.point_rate }}</div>
+                        <div class="card-mini-tags">
+                            {% for tag in card.tags[:3] %}
+                            <span class="tag">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="card-mini-rating">★ {{ card.rating }}</div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% if adsense_enabled %}
+    <div class="ad-container ad-footer">
+        <ins class="adsbygoogle" style="display:block"
+             data-ad-client="{{ adsense_client_id }}"
+             data-ad-slot="{{ adsense_slots.footer_banner }}"
+             data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+    {% endif %}
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-bottom">
+                <p>&copy; 2025 クレジットカードおすすめ比較. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/cards.js"></script>
+</body>
+</html>
