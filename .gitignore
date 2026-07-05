@@ -5,3 +5,5 @@ data/recommendation_logs.json
 data/changelog.json
 data/news.json
 .DS_Store
+**/.DS_Store
+.hermes/
