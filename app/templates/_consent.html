@@ -1,0 +1,62 @@
+{% raw %}
+<!-- Google Consent Mode v2 — CMP banner for EEA/UK/Switzerland -->
+<style>
+#consent-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0a0a0a;border-top:1px solid #3a3a3a;padding:20px 40px;display:none;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+#consent-banner.show{display:flex}
+#consent-banner p{font-size:.8rem;color:#b0b0b0;margin:0;max-width:600px;line-height:1.6}
+#consent-banner a{color:#c5a572;text-decoration:underline}
+#consent-btn-accept{padding:10px 28px;background:#c5a572;color:#000;border:none;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all .3s}
+#consent-btn-accept:hover{background:#d4b88a}
+#consent-btn-reject{padding:10px 28px;background:transparent;color:#8a8a8a;border:1px solid #3a3a3a;font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all .3s}
+#consent-btn-reject:hover{color:#fff;border-color:#5a5a5a}
+@media(max-width:768px){#consent-banner{padding:16px 20px;flex-direction:column;gap:16px}#consent-banner p{max-width:100%;text-align:center}}
+</style>
+<div id="consent-banner">
+  <p>We use cookies to serve ads and improve our services. By clicking Accept, you consent to the use of cookies for advertising and analytics purposes as described in our <a href="/about">Privacy Policy</a>. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's ad technologies</a> for details.</p>
+  <div style="display:flex;gap:12px;flex-shrink:0;">
+    <button id="consent-btn-reject" onclick="handleConsent(false)">Reject</button>
+    <button id="consent-btn-accept" onclick="handleConsent(true)">Accept</button>
+  </div>
+</div>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'wait_for_update': 500
+});
+
+function handleConsent(accepted) {
+  var state = accepted ? 'granted' : 'denied';
+  gtag('consent', 'update', {
+    'ad_storage': state,
+    'ad_user_data': state,
+    'ad_personalization': state,
+    'analytics_storage': state
+  });
+  localStorage.setItem('consentChoice', state);
+  document.getElementById('consent-banner').classList.remove('show');
+}
+
+(function() {
+  var choice = localStorage.getItem('consentChoice');
+  if (!choice) {
+    setTimeout(function() {
+      document.getElementById('consent-banner').classList.add('show');
+    }, 1500);
+  } else {
+    var state = choice === 'granted' ? 'granted' : 'denied';
+    gtag('consent', 'update', {
+      'ad_storage': state,
+      'ad_user_data': state,
+      'ad_personalization': state,
+      'analytics_storage': state
+    });
+  }
+})();
+</script>
+{% endraw %}

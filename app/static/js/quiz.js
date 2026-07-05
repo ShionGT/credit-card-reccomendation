@@ -203,7 +203,7 @@ function renderResults(recommendations) {
                     </div>
                 </div>
                 <div class="result-cta">
-                    <a href="${affiliateUrl}" target="_blank" rel="noopener nofollow">詳細を見る</a>
+                    <a href="/card/${card.id}">詳細を見る</a>
                 </div>
             </div>
         `;
