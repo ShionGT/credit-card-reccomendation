@@ -19,11 +19,16 @@ app = Flask(__name__, template_folder=os.path.join(BASE_DIR, "app", "templates")
 import sys
 sys.path.insert(0, os.path.join(BASE_DIR, "config"))
 try:
-    from adsense import ADSENSE_CLIENT_ID, ADSENSE_SLOTS, ADSENSE_ENABLED
+    from adsense import ADSENSE_CLIENT_ID as _AD_CLIENT, ADSENSE_SLOTS as _AD_SLOTS, ADSENSE_ENABLED as _AD_ENABLED
 except Exception:
-    ADSENSE_CLIENT_ID = "ca-pub-0000000000000000"
-    ADSENSE_SLOTS = {}
-    ADSENSE_ENABLED = False
+    _AD_CLIENT = "ca-pub-0000000000000000"
+    _AD_SLOTS = {}
+    _AD_ENABLED = False
+
+# Allow env vars to override config file (for Render / production)
+ADSENSE_CLIENT_ID = os.environ.get("ADSENSE_CLIENT_ID", _AD_CLIENT)
+ADSENSE_ENABLED = os.environ.get("ADSENSE_ENABLED", str(_AD_ENABLED)).lower() in ("true", "1", "yes")
+ADSENSE_SLOTS = _AD_SLOTS
 
 
 def load_cards():
@@ -203,4 +208,5 @@ def health():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port, debug=os.environ.get("FLASK_DEBUG", "0") == "1")
