@@ -41,7 +41,7 @@
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.rakuten-card.co.jp/creditcard/entry/?scid=WI001-cardlist001",
+    "affiliate_url": "https://www.rakuten-card.co.jp/card/",
     "rating": 4.5,
     "updated": "2025-07-05"
   },
@@ -83,7 +83,7 @@
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.saisoncard.co.jp/nyukai/official/card/international/index.html",
+    "affiliate_url": "https://www.saisoncard.co.jp/creditcard/lineup/",
     "rating": 4.0,
     "updated": "2025-07-05"
   },
@@ -126,7 +126,7 @@
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://card.orico.co.jp/entry/pcard-1/",
+    "affiliate_url": "https://www.orico.co.jp/creditcard/list/thepoint/",
     "rating": 4.2,
     "updated": "2025-07-05"
   },
@@ -340,7 +340,7 @@
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.viewsnet.jp/V1700/V1700_001.aspx?CardType=I1100N",
+    "affiliate_url": "https://www.jreast.co.jp/card/entry/flow.html",
     "rating": 3.8,
     "updated": "2025-07-05"
   },
@@ -426,7 +426,7 @@
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.eposcard.co.jp/nyukai/index.html",
+    "affiliate_url": "https://www.eposcard.co.jp/eposcard/application.html",
     "rating": 4.0,
     "updated": "2025-07-05"
   },
@@ -467,7 +467,7 @@
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.smbc-card.com/nyukai/card/numberless_gold.jsp",
+    "affiliate_url": "https://www.smbc-card.com/nyukai/card/gold-numberless.jsp",
     "rating": 4.3,
     "updated": "2025-07-05"
   },
@@ -510,7 +510,7 @@
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.diners.co.jp/ja/cardlineup/nyukai.html",
+    "affiliate_url": "https://www.diners.co.jp/ja/cardlineup/dinersclubcard.html",
     "rating": 4.6,
     "updated": "2025-07-05"
   },
@@ -816,7 +816,7 @@
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.jal.co.jp/jp/ja/jalcard/card/amex.html",
+    "affiliate_url": "https://jalcard.jal.co.jp/cgi-bin/cardlist/af.cgi?f=spring25_amex&root=BUJCIONLINE",
     "rating": 4.5,
     "updated": "2025-07-05"
   },
@@ -861,7 +861,7 @@
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.jal.co.jp/jp/ja/jalcard/card/amex.html",
+    "affiliate_url": "https://jalcard.jal.co.jp/cgi-bin/cardlist/spaf.cgi?f=sp_platinum&root=BUJCIONLINE",
     "rating": 4.8,
     "updated": "2025-07-05"
   },
@@ -949,7 +949,7 @@
     "interest_rate": "10.77%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.cr.mufg.jp/apply/lineup/gold/index.html",
+    "affiliate_url": "https://www.cr.mufg.jp/apply/card/mucard_goldprestige/index.html",
     "rating": 4.8,
     "updated": "2025-07-05"
   },
@@ -991,7 +991,7 @@
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/business-card/",
+    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/small-business-cards/start-up/",
     "rating": 4.3,
     "updated": "2025-07-05"
   },
@@ -1034,7 +1034,7 @@
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/business-gold-card/",
+    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/gold-business-corp-card/",
     "rating": 4.7,
     "updated": "2025-07-05"
   },
@@ -1077,7 +1077,7 @@
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/marriott-bonvoy-premium-card/",
+    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/marriott-bonvoy-premium/",
     "rating": 4.6,
     "updated": "2025-07-05"
   },
@@ -1120,7 +1120,7 @@
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/ana-card/",
+    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/ana-classic-card/",
     "rating": 4.4,
     "updated": "2025-07-05"
   },
@@ -1163,7 +1163,7 @@
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/spg-card/",
+    "affiliate_url": "https://www.americanexpress.com/ja-jp/credit-cards/marriott-bonvoy-base/",
     "rating": 4.5,
     "updated": "2025-07-05"
   },
