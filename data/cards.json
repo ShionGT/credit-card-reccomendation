@@ -11,7 +11,12 @@
     "bonus_detail": "新規入会で最大8,000円分のポイントがもらえるキャンペーン実施中",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["Visa", "Mastercard", "JCB", "American Express"],
+    "international_brand": [
+      "Visa",
+      "Mastercard",
+      "JCB",
+      "American Express"
+    ],
     "travel_benefits": 1,
     "cashback_benefits": 5,
     "shopping_benefits": 4,
@@ -19,12 +24,24 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "初心者・学生・主婦向け",
-    "features": ["ポイント還元率1.0%（通常時）", "楽天市場でポイント3倍", "Apple Pay / Google Pay対応", "海外旅行傷害保険 最高2,000万円", "オンライン発行で最短1週間"],
-    "tags": ["初心者", "学生", "主婦", "ポイント", "楽天"],
+    "features": [
+      "ポイント還元率1.0%（通常時）",
+      "楽天市場でポイント3倍",
+      "Apple Pay / Google Pay対応",
+      "海外旅行傷害保険 最高2,000万円",
+      "オンライン発行で最短1週間"
+    ],
+    "tags": [
+      "初心者",
+      "学生",
+      "主婦",
+      "ポイント",
+      "楽天"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.rakuten-card.co.jp/",
+    "affiliate_url": "https://www.rakuten-card.co.jp/creditcard/entry/?scid=WI001-cardlist001",
     "rating": 4.5,
     "updated": "2025-07-05"
   },
@@ -40,7 +57,11 @@
     "bonus_detail": "オンライン申し込みで最大3,000円分のギフトカードプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 1.0,
-    "international_brand": ["Visa", "Mastercard", "JCB"],
+    "international_brand": [
+      "Visa",
+      "Mastercard",
+      "JCB"
+    ],
     "travel_benefits": 2,
     "cashback_benefits": 3,
     "shopping_benefits": 4,
@@ -48,12 +69,21 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "初心者・社会人向け",
-    "features": ["ポイント有効期限なし（永久不滅ポイント）", "西武・そごう・大丸で5%OFF", "オンラインプロセス", "即日発行可能（店舗にて）"],
-    "tags": ["初心者", "ショッピング", "デパート"],
+    "features": [
+      "ポイント有効期限なし（永久不滅ポイント）",
+      "西武・そごう・大丸で5%OFF",
+      "オンラインプロセス",
+      "即日発行可能（店舗にて）"
+    ],
+    "tags": [
+      "初心者",
+      "ショッピング",
+      "デパート"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.saisoncard.co.jp/",
+    "affiliate_url": "https://www.saisoncard.co.jp/nyukai/official/card/international/index.html",
     "rating": 4.0,
     "updated": "2025-07-05"
   },
@@ -69,7 +99,10 @@
     "bonus_detail": "新規入会＋利用で最大10,000円分のオリコポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 2.0,
-    "international_brand": ["Visa", "Mastercard"],
+    "international_brand": [
+      "Visa",
+      "Mastercard"
+    ],
     "travel_benefits": 1,
     "cashback_benefits": 5,
     "shopping_benefits": 5,
@@ -77,12 +110,23 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "初心者・学生・主婦向け",
-    "features": ["ポイント還元率1.0%（通常時）", "オリコモール経由でポイント上乗せ", "オンライン発行で最短8営業日", "海外旅行傷害保険最高2,000万円"],
-    "tags": ["初心者", "学生", "主婦", "ポイント", "お得"],
+    "features": [
+      "ポイント還元率1.0%（通常時）",
+      "オリコモール経由でポイント上乗せ",
+      "オンライン発行で最短8営業日",
+      "海外旅行傷害保険最高2,000万円"
+    ],
+    "tags": [
+      "初心者",
+      "学生",
+      "主婦",
+      "ポイント",
+      "お得"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.orico.co.jp/",
+    "affiliate_url": "https://card.orico.co.jp/entry/pcard-1/",
     "rating": 4.2,
     "updated": "2025-07-05"
   },
@@ -98,7 +142,9 @@
     "bonus_detail": "新規入会と利用で最大14,500円分のポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 5.5,
-    "international_brand": ["JCB"],
+    "international_brand": [
+      "JCB"
+    ],
     "travel_benefits": 2,
     "cashback_benefits": 5,
     "shopping_benefits": 5,
@@ -106,12 +152,24 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "初心者・学生・主婦向け",
-    "features": ["ポイント還元率1.0%（通常時）", "スタバ・Amazonでポイント10倍", "Apple Pay対応", "海外旅行傷害保険最高3,000万円"],
-    "tags": ["初心者", "学生", "主婦", "ポイント", "お得", "JCB"],
+    "features": [
+      "ポイント還元率1.0%（通常時）",
+      "スタバ・Amazonでポイント10倍",
+      "Apple Pay対応",
+      "海外旅行傷害保険最高3,000万円"
+    ],
+    "tags": [
+      "初心者",
+      "学生",
+      "主婦",
+      "ポイント",
+      "お得",
+      "JCB"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.jcb.co.jp/ordercard/odCardLst.html?cardKindCd=CWSP",
+    "affiliate_url": "https://www.jcb.co.jp/ordercard/kojin_card/os_card_w2.html",
     "rating": 4.3,
     "updated": "2025-07-05"
   },
@@ -127,7 +185,11 @@
     "bonus_detail": "新規入会で最大10,000円分のPayPayポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 3.0,
-    "international_brand": ["Visa", "Mastercard", "JCB"],
+    "international_brand": [
+      "Visa",
+      "Mastercard",
+      "JCB"
+    ],
     "travel_benefits": 2,
     "cashback_benefits": 4,
     "shopping_benefits": 5,
@@ -135,12 +197,24 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "初心者・学生・主婦向け",
-    "features": ["Yahoo!ショッピングでポイント3倍", "PayPayポイントがたまる", "Apple Pay対応", "海外旅行傷害保険最高2,000万円"],
-    "tags": ["初心者", "学生", "主婦", "PayPay", "お得", "JCB"],
+    "features": [
+      "Yahoo!ショッピングでポイント3倍",
+      "PayPayポイントがたまる",
+      "Apple Pay対応",
+      "海外旅行傷害保険最高2,000万円"
+    ],
+    "tags": [
+      "初心者",
+      "学生",
+      "主婦",
+      "PayPay",
+      "お得",
+      "JCB"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://card.yahoo.co.jp/",
+    "affiliate_url": "https://www.paypay-card.co.jp/application/",
     "rating": 4.1,
     "updated": "2025-07-05"
   },
@@ -156,7 +230,10 @@
     "bonus_detail": "新規入会＋利用で最大12,000円分のVポイントをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 7.0,
-    "international_brand": ["Visa", "Mastercard"],
+    "international_brand": [
+      "Visa",
+      "Mastercard"
+    ],
     "travel_benefits": 2,
     "cashback_benefits": 4,
     "shopping_benefits": 4,
@@ -164,12 +241,22 @@
     "gas_benefits": 1,
     "mobile_benefits": 4,
     "credit_score_required": "初心者・社会人向け",
-    "features": ["コンビニ・ファミレスで最大7%還元", "Vポイントがたまる", "タッチ決済でスピード決済", "海外旅行傷害保険最高2,000万円"],
-    "tags": ["初心者", "コンビニ", "タッチ決済", "お得"],
+    "features": [
+      "コンビニ・ファミレスで最大7%還元",
+      "Vポイントがたまる",
+      "タッチ決済でスピード決済",
+      "海外旅行傷害保険最高2,000万円"
+    ],
+    "tags": [
+      "初心者",
+      "コンビニ",
+      "タッチ決済",
+      "お得"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.smbc-card.com/mem/index/card/nl/index.html",
+    "affiliate_url": "https://www.smbc-card.com/nyukai/card/numberless.jsp",
     "rating": 4.2,
     "updated": "2025-07-05"
   },
@@ -185,7 +272,9 @@
     "bonus_detail": "新規入会で最大15,000円分のAmazonポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 2.5,
-    "international_brand": ["Visa"],
+    "international_brand": [
+      "Visa"
+    ],
     "travel_benefits": 2,
     "cashback_benefits": 4,
     "shopping_benefits": 5,
@@ -193,12 +282,22 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "初心者・社会人向け",
-    "features": ["Amazon.co.jpでポイント2倍", "Amazonプライム会員特典あり", "海外旅行傷害保険最高3,000万円", "国内旅行傷害保険最高3,000万円"],
-    "tags": ["初心者", "Amazon", "お得", "プライム"],
+    "features": [
+      "Amazon.co.jpでポイント2倍",
+      "Amazonプライム会員特典あり",
+      "海外旅行傷害保険最高3,000万円",
+      "国内旅行傷害保険最高3,000万円"
+    ],
+    "tags": [
+      "初心者",
+      "Amazon",
+      "お得",
+      "プライム"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.smbc-card.com/mem/contents/amazon_visa/index.html",
+    "affiliate_url": "https://www.smbc-card.com/nyukai/affiliate/amazon/index.jsp",
     "rating": 4.4,
     "updated": "2025-07-05"
   },
@@ -214,7 +313,10 @@
     "bonus_detail": "新規入会で最大5,000円分のJRE POINTをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 1.5,
-    "international_brand": ["Visa", "Mastercard"],
+    "international_brand": [
+      "Visa",
+      "Mastercard"
+    ],
     "travel_benefits": 2,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -222,12 +324,23 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "初心者・学生・主婦向け",
-    "features": ["Suicaオートチャージ可能", "定期券と一体型", "JR東日本の切符購入でポイント3倍", "海外旅行傷害保険最高500万円"],
-    "tags": ["初心者", "Suica", "電車", "通勤", "学生"],
+    "features": [
+      "Suicaオートチャージ可能",
+      "定期券と一体型",
+      "JR東日本の切符購入でポイント3倍",
+      "海外旅行傷害保険最高500万円"
+    ],
+    "tags": [
+      "初心者",
+      "Suica",
+      "電車",
+      "通勤",
+      "学生"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://viewsnet.jp/card/",
+    "affiliate_url": "https://www.viewsnet.jp/V1700/V1700_001.aspx?CardType=I1100N",
     "rating": 3.8,
     "updated": "2025-07-05"
   },
@@ -243,7 +356,11 @@
     "bonus_detail": "新規入会で最大6,000円分のポイントをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 1.0,
-    "international_brand": ["Visa", "Mastercard", "JCB"],
+    "international_brand": [
+      "Visa",
+      "Mastercard",
+      "JCB"
+    ],
     "travel_benefits": 1,
     "cashback_benefits": 3,
     "shopping_benefits": 5,
@@ -251,12 +368,23 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "初心者・学生・主婦向け",
-    "features": ["イオングループでポイント2倍", "毎月20日・30日は5%OFF", "イオンシネマ映画鑑賞券1,000円引き", "永年無料で家族カード発行可能"],
-    "tags": ["初心者", "学生", "主婦", "イオン", "ショッピング"],
+    "features": [
+      "イオングループでポイント2倍",
+      "毎月20日・30日は5%OFF",
+      "イオンシネマ映画鑑賞券1,000円引き",
+      "永年無料で家族カード発行可能"
+    ],
+    "tags": [
+      "初心者",
+      "学生",
+      "主婦",
+      "イオン",
+      "ショッピング"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.aeonbank.co.jp/personal/credit/select.html",
+    "affiliate_url": "https://www.aeonbank.co.jp/aeoncard/",
     "rating": 4.0,
     "updated": "2025-07-05"
   },
@@ -272,7 +400,9 @@
     "bonus_detail": "新規入会で最大10,000円分のエポスポイントをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 1.0,
-    "international_brand": ["Visa"],
+    "international_brand": [
+      "Visa"
+    ],
     "travel_benefits": 3,
     "cashback_benefits": 3,
     "shopping_benefits": 4,
@@ -280,12 +410,23 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "初心者・学生・主婦向け",
-    "features": ["マルイ・モディで10%OFF（期間限定）", "映画館のチケット割引", "海外旅行傷害保険最高500万円（自動付帯）", "即日発行可能（マルイ店舗にて）"],
-    "tags": ["初心者", "学生", "主婦", "マルイ", "お得"],
+    "features": [
+      "マルイ・モディで10%OFF（期間限定）",
+      "映画館のチケット割引",
+      "海外旅行傷害保険最高500万円（自動付帯）",
+      "即日発行可能（マルイ店舗にて）"
+    ],
+    "tags": [
+      "初心者",
+      "学生",
+      "主婦",
+      "マルイ",
+      "お得"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.eposcard.co.jp/",
+    "affiliate_url": "https://www.eposcard.co.jp/nyukai/index.html",
     "rating": 4.0,
     "updated": "2025-07-05"
   },
@@ -301,7 +442,10 @@
     "bonus_detail": "新規入会で最大20,000円分のVポイントをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 5.0,
-    "international_brand": ["Visa", "Mastercard"],
+    "international_brand": [
+      "Visa",
+      "Mastercard"
+    ],
     "travel_benefits": 4,
     "cashback_benefits": 3,
     "shopping_benefits": 4,
@@ -309,12 +453,21 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "社会人・中級者向け",
-    "features": ["年100万円利用で翌年実質無料", "海外旅行傷害保険最高2,000万円", "国内旅行傷害保険最高3,000万円", "空港ラウンジ無料"],
-    "tags": ["ゴールド", "中級者", "お得"],
+    "features": [
+      "年100万円利用で翌年実質無料",
+      "海外旅行傷害保険最高2,000万円",
+      "国内旅行傷害保険最高3,000万円",
+      "空港ラウンジ無料"
+    ],
+    "tags": [
+      "ゴールド",
+      "中級者",
+      "お得"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.smbc-card.com/mem/index/card/gold_nl/index.html",
+    "affiliate_url": "https://www.smbc-card.com/nyukai/card/numberless_gold.jsp",
     "rating": 4.3,
     "updated": "2025-07-05"
   },
@@ -330,7 +483,9 @@
     "bonus_detail": "新規入会で最大20,000円分のポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["Diners Club"],
+    "international_brand": [
+      "Diners Club"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -338,12 +493,24 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "上級者・ハイステータス",
-    "features": ["世界中の空港ラウンジ無料", "レストランコレクション", "海外・国内旅行傷害保険最高1億円", "24時間コンシェルジュサービス"],
-    "tags": ["ゴールド", "上級者", "旅行", "ハイステータス", "ビジネス", "ダイニング"],
+    "features": [
+      "世界中の空港ラウンジ無料",
+      "レストランコレクション",
+      "海外・国内旅行傷害保険最高1億円",
+      "24時間コンシェルジュサービス"
+    ],
+    "tags": [
+      "ゴールド",
+      "上級者",
+      "旅行",
+      "ハイステータス",
+      "ビジネス",
+      "ダイニング"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.diners.co.jp/",
+    "affiliate_url": "https://www.diners.co.jp/ja/cardlineup/nyukai.html",
     "rating": 4.6,
     "updated": "2025-07-05"
   },
@@ -359,7 +526,10 @@
     "bonus_detail": "新規入会で最大40,000円分のポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 3.0,
-    "international_brand": ["Visa", "Mastercard"],
+    "international_brand": [
+      "Visa",
+      "Mastercard"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -367,12 +537,24 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "上級者・ハイステータス",
-    "features": ["プライオリティ・パス無料（年10回）", "世界中の空港ラウンジアクセス", "海外・国内旅行傷害保険最高1億円", "24時間コンシェルジュサービス", "プラチナ特典多数"],
-    "tags": ["プラチナ", "上級者", "旅行", "ハイステータス", "ビジネス"],
+    "features": [
+      "プライオリティ・パス無料（年10回）",
+      "世界中の空港ラウンジアクセス",
+      "海外・国内旅行傷害保険最高1億円",
+      "24時間コンシェルジュサービス",
+      "プラチナ特典多数"
+    ],
+    "tags": [
+      "プラチナ",
+      "上級者",
+      "旅行",
+      "ハイステータス",
+      "ビジネス"
+    ],
     "interest_rate": "10.77%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.cr.mufg.jp/akahane/ls/index.html",
+    "affiliate_url": "https://www.cr.mufg.jp/apply/lineup/status/index.html",
     "rating": 4.7,
     "updated": "2025-07-05"
   },
@@ -388,7 +570,9 @@
     "bonus_detail": "新規入会と利用条件達成で最大105,000メンバーシップ・リワードポイントをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 4,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -396,8 +580,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "社会人・中級者向け",
-    "features": ["プライオリティ・パス年8回無料", "海外旅行傷害保険最高3,000万円", "ポケットコンシェルジュでダイニング優待", "Apple Pay / Google Pay対応", "メンバーシップ・リワードポイント無期限"],
-    "tags": ["アメックス", "中級者", "旅行", "ステータス", "入門アメックス"],
+    "features": [
+      "プライオリティ・パス年8回無料",
+      "海外旅行傷害保険最高3,000万円",
+      "ポケットコンシェルジュでダイニング優待",
+      "Apple Pay / Google Pay対応",
+      "メンバーシップ・リワードポイント無期限"
+    ],
+    "tags": [
+      "アメックス",
+      "中級者",
+      "旅行",
+      "ステータス",
+      "入門アメックス"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -417,7 +613,9 @@
     "bonus_detail": "新規入会と利用条件達成で最大60,000メンバーシップ・リワードポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 3,
     "shopping_benefits": 3,
@@ -425,8 +623,22 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "中級者・上級者向け",
-    "features": ["プライオリティ・パス年会費無料", "海外旅行傷害保険最高1億円", "国内旅行傷害保険最高5,000万円", "レストラン優待・ゴルフ予約サービス", "ホテル・コレクションで4泊目無料", "Apple Pay / Google Pay対応"],
-    "tags": ["アメックス", "ゴールド", "上級者", "旅行", "ステータス", "ダイニング"],
+    "features": [
+      "プライオリティ・パス年会費無料",
+      "海外旅行傷害保険最高1億円",
+      "国内旅行傷害保険最高5,000万円",
+      "レストラン優待・ゴルフ予約サービス",
+      "ホテル・コレクションで4泊目無料",
+      "Apple Pay / Google Pay対応"
+    ],
+    "tags": [
+      "アメックス",
+      "ゴールド",
+      "上級者",
+      "旅行",
+      "ステータス",
+      "ダイニング"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -446,7 +658,9 @@
     "bonus_detail": "新規入会と利用条件達成で最大100,000メンバーシップ・リワードポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -454,8 +668,22 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "上級者・ハイステータス",
-    "features": ["プライオリティ・パス無制限無料", "世界中の空港ラウンジアクセス", "海外・国内旅行傷害保険最高1億円", "24時間コンシェルジュサービス", "ホテル・コレクションで4泊目無料", "提携ホテル上級会員ステータス自動付与"],
-    "tags": ["アメックス", "プラチナ", "上級者", "旅行", "ハイステータス", "ビジネス"],
+    "features": [
+      "プライオリティ・パス無制限無料",
+      "世界中の空港ラウンジアクセス",
+      "海外・国内旅行傷害保険最高1億円",
+      "24時間コンシェルジュサービス",
+      "ホテル・コレクションで4泊目無料",
+      "提携ホテル上級会員ステータス自動付与"
+    ],
+    "tags": [
+      "アメックス",
+      "プラチナ",
+      "上級者",
+      "旅行",
+      "ハイステータス",
+      "ビジネス"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -475,7 +703,9 @@
     "bonus_detail": "新規入会で最大3,000円分の永久不滅ポイントをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 2.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 4,
     "cashback_benefits": 3,
     "shopping_benefits": 4,
@@ -483,8 +713,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "社会人・中級者向け",
-    "features": ["永久不滅ポイント（有効期限なし）", "海外旅行傷害保険最高3,000万円", "Apple Pay対応", "JCB加盟店で全国利用可能", "年会費がリーズナブルなアメックス"],
-    "tags": ["アメックス", "中級者", "永年無料", "ショッピング", "旅行"],
+    "features": [
+      "永久不滅ポイント（有効期限なし）",
+      "海外旅行傷害保険最高3,000万円",
+      "Apple Pay対応",
+      "JCB加盟店で全国利用可能",
+      "年会費がリーズナブルなアメックス"
+    ],
+    "tags": [
+      "アメックス",
+      "中級者",
+      "永年無料",
+      "ショッピング",
+      "旅行"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
@@ -504,7 +746,9 @@
     "bonus_detail": "新規入会で最大10,000円分の永久不滅ポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 2.5,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 3,
     "shopping_benefits": 4,
@@ -512,8 +756,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "上級者・ハイステータス",
-    "features": ["プライオリティ・パス年会費無料", "海外旅行傷害保険最高1億円", "コンシェルジュサービス", "永久不滅ポイント有効期限なし", "JCB加盟店で全国利用可能"],
-    "tags": ["アメックス", "プラチナ", "上級者", "旅行", "ハイステータス"],
+    "features": [
+      "プライオリティ・パス年会費無料",
+      "海外旅行傷害保険最高1億円",
+      "コンシェルジュサービス",
+      "永久不滅ポイント有効期限なし",
+      "JCB加盟店で全国利用可能"
+    ],
+    "tags": [
+      "アメックス",
+      "プラチナ",
+      "上級者",
+      "旅行",
+      "ハイステータス"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
@@ -533,7 +789,9 @@
     "bonus_detail": "新規入会で最大3,000マイルをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -541,8 +799,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "中級者・上級者向け",
-    "features": ["JALマイルが直接貯まる", "フライトごとにマイル100%ボーナス", "海外旅行傷害保険最高3,000万円", "空港ラウンジサービス", "Apple Pay対応"],
-    "tags": ["アメックス", "JAL", "マイル", "旅行", "ビジネス"],
+    "features": [
+      "JALマイルが直接貯まる",
+      "フライトごとにマイル100%ボーナス",
+      "海外旅行傷害保険最高3,000万円",
+      "空港ラウンジサービス",
+      "Apple Pay対応"
+    ],
+    "tags": [
+      "アメックス",
+      "JAL",
+      "マイル",
+      "旅行",
+      "ビジネス"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -562,7 +832,9 @@
     "bonus_detail": "新規入会で最大10,000マイルをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -570,8 +842,22 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "上級者・ハイステータス",
-    "features": ["JALマイルが直接貯まる", "フライトごとにマイル100%ボーナス", "プライオリティ・パス年会費無料", "海外旅行傷害保険最高1億円", "24時間コンシェルジュサービス", "空港ラウンジサービス"],
-    "tags": ["アメックス", "JAL", "マイル", "プラチナ", "ハイステータス", "旅行"],
+    "features": [
+      "JALマイルが直接貯まる",
+      "フライトごとにマイル100%ボーナス",
+      "プライオリティ・パス年会費無料",
+      "海外旅行傷害保険最高1億円",
+      "24時間コンシェルジュサービス",
+      "空港ラウンジサービス"
+    ],
+    "tags": [
+      "アメックス",
+      "JAL",
+      "マイル",
+      "プラチナ",
+      "ハイステータス",
+      "旅行"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -591,7 +877,9 @@
     "bonus_detail": "新規入会で最大40,000円分のポイントをプレゼント",
     "cashback_rate": "1.5%",
     "cashback_max": 3.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -599,12 +887,25 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "上級者・ハイステータス",
-    "features": ["プライオリティ・パス年会費無料", "世界30万ヶ所以上の空港ラウンジ無料", "海外・国内旅行傷害保険最高1億円", "コンシェルジュサービス24時間", "家族カード1名様年会費無料"],
-    "tags": ["アメックス", "プラチナ", "上級者", "旅行", "ハイステータス", "ビジネス"],
+    "features": [
+      "プライオリティ・パス年会費無料",
+      "世界30万ヶ所以上の空港ラウンジ無料",
+      "海外・国内旅行傷害保険最高1億円",
+      "コンシェルジュサービス24時間",
+      "家族カード1名様年会費無料"
+    ],
+    "tags": [
+      "アメックス",
+      "プラチナ",
+      "上級者",
+      "旅行",
+      "ハイステータス",
+      "ビジネス"
+    ],
     "interest_rate": "10.77%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.cr.mufg.jp/amex/platinum/",
+    "affiliate_url": "https://www.cr.mufg.jp/amex/apply/mucard_platinum/index.html",
     "rating": 4.7,
     "updated": "2025-07-05"
   },
@@ -620,7 +921,9 @@
     "bonus_detail": "新規入会で最大35,000円分のポイントをプレゼント",
     "cashback_rate": "1.5%",
     "cashback_max": 3.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -628,12 +931,25 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "上級者・ハイステータス",
-    "features": ["ポイント還元率3.0%（3,000円利用ごとに）", "世界30万ヶ所以上の空港ラウンジ無料", "海外・国内旅行傷害保険最高1億円", "コンシェルジュサービス24時間", "ショッピング保険年間最高500万円"],
-    "tags": ["ゴールド", "アメックス", "上級者", "旅行", "ハイステータス", "ビジネス"],
+    "features": [
+      "ポイント還元率3.0%（3,000円利用ごとに）",
+      "世界30万ヶ所以上の空港ラウンジ無料",
+      "海外・国内旅行傷害保険最高1億円",
+      "コンシェルジュサービス24時間",
+      "ショッピング保険年間最高500万円"
+    ],
+    "tags": [
+      "ゴールド",
+      "アメックス",
+      "上級者",
+      "旅行",
+      "ハイステータス",
+      "ビジネス"
+    ],
     "interest_rate": "10.77%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
-    "affiliate_url": "https://www.cr.mufg.jp/akahane/ls/index.html",
+    "affiliate_url": "https://www.cr.mufg.jp/apply/lineup/gold/index.html",
     "rating": 4.8,
     "updated": "2025-07-05"
   },
@@ -649,7 +965,9 @@
     "bonus_detail": "新規入会と利用条件達成で最大50,000メンバーシップ・リワードポイントをプレゼント",
     "cashback_rate": "0.5%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 4,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -657,8 +975,19 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "ビジネス・中級者向け",
-    "features": ["経費管理に便利なビジネスカード", "社員用追加カード発行可能", "海外旅行傷害保険最高3,000万円", "経費精算システム連携", "Apple Pay / Google Pay対応"],
-    "tags": ["アメックス", "ビジネス", "中級者", "経費管理"],
+    "features": [
+      "経費管理に便利なビジネスカード",
+      "社員用追加カード発行可能",
+      "海外旅行傷害保険最高3,000万円",
+      "経費精算システム連携",
+      "Apple Pay / Google Pay対応"
+    ],
+    "tags": [
+      "アメックス",
+      "ビジネス",
+      "中級者",
+      "経費管理"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -678,7 +1007,9 @@
     "bonus_detail": "新規入会と利用条件達成で最大80,000メンバーシップ・リワードポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 3,
     "shopping_benefits": 3,
@@ -686,8 +1017,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "ビジネス・上級者向け",
-    "features": ["プライオリティ・パス年会費無料", "経費管理に便利なビジネスカード", "海外旅行傷害保険最高1億円", "コンシェルジュサービス", "社員用追加カード発行可能"],
-    "tags": ["アメックス", "ビジネス", "ゴールド", "上級者", "経費管理"],
+    "features": [
+      "プライオリティ・パス年会費無料",
+      "経費管理に便利なビジネスカード",
+      "海外旅行傷害保険最高1億円",
+      "コンシェルジュサービス",
+      "社員用追加カード発行可能"
+    ],
+    "tags": [
+      "アメックス",
+      "ビジネス",
+      "ゴールド",
+      "上級者",
+      "経費管理"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -707,7 +1050,9 @@
     "bonus_detail": "新規入会と利用条件達成で最大100,000マリオットボンヴォイポイントをプレゼント",
     "cashback_rate": "1.5%",
     "cashback_max": 3.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 3,
     "shopping_benefits": 3,
@@ -715,8 +1060,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "中級者・上級者向け",
-    "features": ["マリオット宿泊で還元率6%", "年会費に付く無料宿泊特典（年1回）", "マリオットボンヴォイゴールドエリート会員資格", "海外旅行傷害保険最高1億円", "プライオリティ・パス年会費無料"],
-    "tags": ["アメックス", "旅行", "ホテル", "マリオット", "上級者"],
+    "features": [
+      "マリオット宿泊で還元率6%",
+      "年会費に付く無料宿泊特典（年1回）",
+      "マリオットボンヴォイゴールドエリート会員資格",
+      "海外旅行傷害保険最高1億円",
+      "プライオリティ・パス年会費無料"
+    ],
+    "tags": [
+      "アメックス",
+      "旅行",
+      "ホテル",
+      "マリオット",
+      "上級者"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -736,7 +1093,9 @@
     "bonus_detail": "新規入会で最大5,000 ANAマイルをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 4,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -744,8 +1103,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "中級者・旅行好き向け",
-    "features": ["ANAマイルが直接貯まる", "フライトごとにマイル10%ボーナス", "空港ラウンジサービス", "海外旅行傷害保険最高3,000万円", "Apple Pay対応"],
-    "tags": ["アメックス", "ANA", "マイル", "旅行", "お得"],
+    "features": [
+      "ANAマイルが直接貯まる",
+      "フライトごとにマイル10%ボーナス",
+      "空港ラウンジサービス",
+      "海外旅行傷害保険最高3,000万円",
+      "Apple Pay対応"
+    ],
+    "tags": [
+      "アメックス",
+      "ANA",
+      "マイル",
+      "旅行",
+      "お得"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -765,7 +1136,9 @@
     "bonus_detail": "新規入会と利用条件達成で最大50,000マリオットボンヴォイポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 3.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -773,8 +1146,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "中級者・上級者向け",
-    "features": ["マリオット宿泊で還元率6%", "マリオットボンヴォイゴールドエリート会員資格", "海外旅行傷害保険最高1億円", "空港ラウンジサービス", "年会費に付く無料宿泊特典"],
-    "tags": ["アメックス", "旅行", "ホテル", "マリオット", "中級者"],
+    "features": [
+      "マリオット宿泊で還元率6%",
+      "マリオットボンヴォイゴールドエリート会員資格",
+      "海外旅行傷害保険最高1億円",
+      "空港ラウンジサービス",
+      "年会費に付く無料宿泊特典"
+    ],
+    "tags": [
+      "アメックス",
+      "旅行",
+      "ホテル",
+      "マリオット",
+      "中級者"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -794,7 +1179,9 @@
     "bonus_detail": "新規入会で最大10,000 ANAマイルをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 1.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 5,
     "cashback_benefits": 2,
     "shopping_benefits": 3,
@@ -802,8 +1189,22 @@
     "gas_benefits": 1,
     "mobile_benefits": 2,
     "credit_score_required": "上級者・旅行好き向け",
-    "features": ["ANAマイルが直接貯まる", "フライトごとにマイル25%ボーナス", "空港ラウンジサービス", "海外旅行傷害保険最高1億円", "プライオリティ・パス年会費無料", "Apple Pay対応"],
-    "tags": ["アメックス", "ANA", "マイル", "ゴールド", "旅行", "上級者"],
+    "features": [
+      "ANAマイルが直接貯まる",
+      "フライトごとにマイル25%ボーナス",
+      "空港ラウンジサービス",
+      "海外旅行傷害保険最高1億円",
+      "プライオリティ・パス年会費無料",
+      "Apple Pay対応"
+    ],
+    "tags": [
+      "アメックス",
+      "ANA",
+      "マイル",
+      "ゴールド",
+      "旅行",
+      "上級者"
+    ],
     "interest_rate": "—",
     "limit": "個別審査",
     "image_url": "",
@@ -823,7 +1224,9 @@
     "bonus_detail": "新規入会で最大5,000円分の永久不滅ポイントをプレゼント",
     "cashback_rate": "1.0%",
     "cashback_max": 2.0,
-    "international_brand": ["American Express"],
+    "international_brand": [
+      "American Express"
+    ],
     "travel_benefits": 4,
     "cashback_benefits": 3,
     "shopping_benefits": 4,
@@ -831,8 +1234,20 @@
     "gas_benefits": 1,
     "mobile_benefits": 3,
     "credit_score_required": "社会人・中級者向け",
-    "features": ["永久不滅ポイント（有効期限なし）", "海外旅行傷害保険最高5,000万円", "Apple Pay対応", "JCB加盟店で全国利用可能", "SAISON MILE CLUBでJALマイル還元1.125%"],
-    "tags": ["アメックス", "ゴールド", "中級者", "ショッピング", "旅行"],
+    "features": [
+      "永久不滅ポイント（有効期限なし）",
+      "海外旅行傷害保険最高5,000万円",
+      "Apple Pay対応",
+      "JCB加盟店で全国利用可能",
+      "SAISON MILE CLUBでJALマイル還元1.125%"
+    ],
+    "tags": [
+      "アメックス",
+      "ゴールド",
+      "中級者",
+      "ショッピング",
+      "旅行"
+    ],
     "interest_rate": "10.0%〜18.0%",
     "limit": "個別審査",
     "image_url": "",
