@@ -26,6 +26,7 @@
                 <a href="/">ホーム</a>
                 <a href="/cards">カード一覧</a>
                 <a href="/about">について</a>
+                <a href="/privacy">プライバシー</a>
             </nav>
         </div>
     </header>
@@ -93,7 +94,8 @@
                     {% endif %}
 
                     {% if card.affiliate_url %}
-                    <a href="{{ card.affiliate_url }}" class="btn-cta" target="_blank" rel="noopener nofollow">公式サイトで申し込む</a>
+                    <a href="/go/{{ card.id }}?src=detail" class="btn-cta" target="_blank" rel="noopener">公式サイトで申し込む</a>
+                    <p class="affiliate-note">{% if aff_active %}※本リンクは広告（アフィリエイトリンク）です。リンク先での申し込みにより当サイトが報酬を受領することがありますが、掲載順位・評価には影響しません。{% else %}※リンク先は各カード会社の公式サイトです。{% endif %}</p>
                     {% endif %}
                 </div>
             </div>

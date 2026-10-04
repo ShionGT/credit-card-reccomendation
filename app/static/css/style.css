@@ -314,6 +314,34 @@ img { max-width: 100%; height: auto; }
     transform: translateY(-2px);
 }
 
+/* Affiliate / application CTAs */
+.result-cta {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.result-cta .result-apply {
+    background: var(--gold);
+    color: var(--black);
+    border: 1px solid var(--gold);
+    font-weight: 600;
+}
+
+.result-cta .result-apply:hover {
+    background: var(--white);
+    color: var(--black);
+    border-color: var(--white);
+}
+
+.affiliate-note {
+    margin-top: 14px;
+    font-size: 0.7rem;
+    color: #8a8a8a;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
 .btn-secondary {
     display: inline-block;
     padding: 14px 40px;

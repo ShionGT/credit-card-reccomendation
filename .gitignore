@@ -2,6 +2,7 @@ venv/
 __pycache__/
 *.pyc
 data/recommendation_logs.json
+data/click_logs.json
 data/changelog.json
 data/news.json
 .DS_Store

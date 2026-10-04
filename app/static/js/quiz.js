@@ -188,7 +188,6 @@ function renderResults(recommendations) {
             ? `<img src="${card.image_url}" alt="${card.name}" onerror="this.style.display='none'">`
             : `<div style="font-size:2rem; color:#3a3a3a;">💳</div>`;
         const tagsHtml = (card.tags || []).slice(0, 4).map(t => `<span class="tag">${t}</span>`).join("");
-        const affiliateUrl = card.affiliate_url || "#";
         return `
             <div class="result-card">
                 <div class="result-rank ${ranks[i]}">${rankNums[i]}</div>
@@ -204,6 +203,7 @@ function renderResults(recommendations) {
                 </div>
                 <div class="result-cta">
                     <a href="/card/${card.id}">詳細を見る</a>
+                    <a href="/go/${card.id}?src=quiz" class="result-apply">公式サイトで申し込む</a>
                 </div>
             </div>
         `;
@@ -214,6 +214,9 @@ function renderResults(recommendations) {
             <button class="btn-secondary" onclick="restartQuiz()">もう一度診断する</button>
             <a href="/cards" class="btn-secondary" style="margin-left:12px;">すべてのカードを見る</a>
         </div>
+        <p style="text-align:center; margin-top:32px; font-size:0.7rem; color:#8a8a8a; letter-spacing:0.05em;">
+            ※「公式サイトで申し込む」リンクは広告（アフィリエイトリンク）の場合があります。申し込みにより当サイトが報酬を受領することがありますが、診断結果・掲載順位には影響しません。
+        </p>
     `;
 
     document.getElementById("resultsContainer").innerHTML = html + retryBtn;

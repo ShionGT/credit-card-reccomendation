@@ -1,0 +1,293 @@
+{
+  "_readme": "ASP tracking links per card. Paste the tracking URL from each ASP into tracking.<asp>, then set active to that asp key (e.g. 'a8'). active='' falls back to the official site link in cards.json. Supported keys: a8, accesstrade, valuecommerce, afb, moshimo",
+  "rakuten-card": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "saison-card": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "orico-the-point": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "jcb-card-w": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "yahoo-jcb-card": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "smbc-nl": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "amazon-visa": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "view-suica-card": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "aeon-card-select": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "epos-card": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "smbc-gold-nl": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "diners-club": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "mufg-platinum": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "amex-green": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "amex-gold-preferred": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "amex-platinum": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "saison-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "saison-platinum-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "jal-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "jal-amex-platinum": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "mufg-platinum-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "mufg-gold-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "amex-business-green": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "amex-business-gold": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "marriott-bonvoy-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "ana-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "spg-amex": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "ana-amex-gold": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  },
+  "saison-amex-gold": {
+    "tracking": {
+      "a8": "",
+      "accesstrade": "",
+      "valuecommerce": "",
+      "afb": "",
+      "moshimo": ""
+    },
+    "active": ""
+  }
+}

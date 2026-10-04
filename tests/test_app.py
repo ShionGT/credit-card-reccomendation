@@ -90,6 +90,54 @@ def test_unique_ids():
     print(f"  ✓ All {len(ids)} card IDs are unique")
 
 
+def test_go_redirect():
+    """Test the /go tracked redirect falls back to the official URL."""
+    client = app_module.app.test_client()
+    resp = client.get("/go/rakuten-card?src=test")
+    assert resp.status_code == 302, f"Expected 302, got {resp.status_code}"
+    assert "rakuten-card.co.jp" in resp.headers.get("Location", ""), resp.headers.get("Location")
+    print(f"  ✓ /go/rakuten-card -> {resp.headers.get('Location')}")
+
+    resp404 = client.get("/go/nonexistent-card")
+    assert resp404.status_code == 404, "Unknown card should 404"
+    print("  ✓ /go/<unknown> returns 404")
+
+
+def test_affiliate_config():
+    """Test affiliate_links.json structure matches cards.json."""
+    aff = app_module.load_affiliate_links()
+    cards = app_module.load_cards()
+    card_ids = {c["id"] for c in cards}
+    configured = {k for k in aff if not k.startswith("_")}
+    missing = card_ids - configured
+    assert not missing, f"Cards missing from affiliate_links.json: {missing}"
+    for cid in configured:
+        entry = aff[cid]
+        assert "tracking" in entry, f"{cid} missing tracking dict"
+        assert entry.get("active", "") in ("",) + tuple(entry["tracking"].keys()), f"{cid} bad active value"
+    print(f"  ✓ Affiliate config valid for {len(configured)} cards")
+
+
+def test_click_logging():
+    """Test clicks are logged (to a temp file so real data stays clean)."""
+    import tempfile
+    tmpdir = tempfile.mkdtemp()
+    real_path = app_module.CLICK_LOG_FILE
+    app_module.CLICK_LOG_FILE = os.path.join(tmpdir, "clicks.json")
+    try:
+        client = app_module.app.test_client()
+        client.get("/go/jcb-card-w?src=test")
+        with open(app_module.CLICK_LOG_FILE, "r", encoding="utf-8") as f:
+            logs = json.load(f)
+        assert len(logs) == 1, "Click not logged"
+        assert logs[0]["card"] == "jcb-card-w", logs[0]
+        assert logs[0]["asp"] == "official", logs[0]
+        assert logs[0]["source"] == "test", logs[0]
+        print("  ✓ Click logging works")
+    finally:
+        app_module.CLICK_LOG_FILE = real_path
+
+
 def run_all():
     print("=" * 50)
     print("  クレジットカードおすすめ比較 - テスト")
@@ -100,6 +148,9 @@ def run_all():
         ("Card fields", test_card_fields),
         ("Scoring algorithm", test_scoring),
         ("Unique IDs", test_unique_ids),
+        ("Go redirect", test_go_redirect),
+        ("Affiliate config", test_affiliate_config),
+        ("Click logging", test_click_logging),
     ]
 
     passed = 0

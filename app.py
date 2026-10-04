@@ -5,7 +5,7 @@ Japanese Credit Card Recommendation Website
 import json
 import os
 import datetime
-from flask import Flask, render_template, jsonify, request, send_from_directory
+from flask import Flask, render_template, jsonify, request, redirect, send_from_directory
 
 app = Flask(__name__)
 
@@ -51,6 +51,58 @@ def load_logs():
 def save_logs(logs):
     with open(LOGS_FILE, "w", encoding="utf-8") as f:
         json.dump(logs, f, ensure_ascii=False, indent=2)
+
+
+# --- Affiliate (ASP) link management ---------------------------------------
+AFFILIATE_FILE = os.path.join(DATA_DIR, "affiliate_links.json")
+CLICK_LOG_FILE = os.path.join(DATA_DIR, "click_logs.json")
+
+
+def load_affiliate_links():
+    """Load ASP tracking link config (card_id -> {tracking: {asp: url}, active: asp})."""
+    if os.path.exists(AFFILIATE_FILE):
+        try:
+            with open(AFFILIATE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def get_apply_url(card_id):
+    """Return (tracking_url, asp_name) for the active ASP, or (None, None) to fall back to the official link."""
+    cfg = load_affiliate_links().get(card_id) or {}
+    active = cfg.get("active", "")
+    if active:
+        url = (cfg.get("tracking") or {}).get(active, "")
+        if url:
+            return url, active
+    return None, None
+
+
+def affiliate_active(card_id):
+    """True when a real ASP tracking link is live for this card."""
+    return get_apply_url(card_id)[1] is not None
+
+
+def log_click(card_id, asp, source):
+    """Append a click record; logging failures must never break the redirect."""
+    try:
+        logs = []
+        if os.path.exists(CLICK_LOG_FILE):
+            with open(CLICK_LOG_FILE, "r", encoding="utf-8") as f:
+                logs = json.load(f)
+        logs.append({
+            "timestamp": datetime.datetime.now().isoformat(),
+            "card": card_id,
+            "asp": asp,
+            "source": source,
+        })
+        logs = logs[-5000:]
+        with open(CLICK_LOG_FILE, "w", encoding="utf-8") as f:
+            json.dump(logs, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
 
 
 def score_card(card, answers):
@@ -166,6 +218,7 @@ def card_detail(card_id):
     return render_template(
         "card_detail.html",
         card=card,
+        aff_active=affiliate_active(card_id),
         adsense_client_id=ADSENSE_CLIENT_ID,
         adsense_slots=ADSENSE_SLOTS,
         adsense_enabled=ADSENSE_ENABLED,
@@ -205,6 +258,61 @@ def health():
     """Health check endpoint."""
     cards = load_cards()
     return jsonify({"status": "ok", "cards_count": len(cards), "date": datetime.datetime.now().isoformat()})
+
+
+@app.route("/go/<card_id>")
+def go_apply(card_id):
+    """Tracked application redirect: ASP tracking URL if configured, else the official page."""
+    cards = load_cards()
+    card = next((c for c in cards if c["id"] == card_id), None)
+    if not card:
+        return render_template("404.html"), 404
+    source = request.args.get("src", "unknown")
+    url, asp = get_apply_url(card_id)
+    if not url:
+        url = card.get("affiliate_url") or "/"
+        asp = "official"
+    log_click(card_id, asp, source)
+    return redirect(url, code=302)
+
+
+@app.route("/api/clicks")
+def api_clicks():
+    """Aggregate click counts (no personal data) for quick CTR checks."""
+    logs = []
+    if os.path.exists(CLICK_LOG_FILE):
+        try:
+            with open(CLICK_LOG_FILE, "r", encoding="utf-8") as f:
+                logs = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            logs = []
+    agg = {}
+    for entry in logs:
+        key = (entry.get("card"), entry.get("asp"), entry.get("source"))
+        agg[key] = agg.get(key, 0) + 1
+    return jsonify({
+        "total": len(logs),
+        "breakdown": [
+            {"card": c, "asp": a, "source": s, "count": n}
+            for (c, a, s), n in sorted(agg.items(), key=lambda kv: -kv[1])
+        ],
+    })
+
+
+@app.route("/privacy")
+def privacy():
+    """Privacy policy page."""
+    return render_template(
+        "privacy.html",
+        adsense_client_id=ADSENSE_CLIENT_ID,
+        adsense_slots=ADSENSE_SLOTS,
+        adsense_enabled=ADSENSE_ENABLED,
+    )
+
+
+@app.route("/robots.txt")
+def robots():
+    return "User-agent: *\nAllow: /\nDisallow: /go/\n", 200, {"Content-Type": "text/plain; charset=utf-8"}
 
 
 if __name__ == "__main__":
